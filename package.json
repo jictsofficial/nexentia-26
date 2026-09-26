@@ -1,0 +1,36 @@
+{
+  "name": "nexentia-26",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^7.0.0",
+    "@fortawesome/free-solid-svg-icons": "^7.0.0",
+    "@fortawesome/react-fontawesome": "^0.2.3",
+    "@react-three/drei": "^10.6.0",
+    "@react-three/fiber": "^9.2.0",
+    "@react-three/postprocessing": "^3.0.4",
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.13.0",
+    "next": "^16.3.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "three": "^0.178.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
