@@ -22,7 +22,7 @@ const TimeCard = ({ value, unit }: { value: number; unit: string }) => {
 }
 
 const Countdown = () => {
-  const targetDate = useMemo(() => new Date('2026-11-03T14:00:00'), []);
+  const targetDate = useMemo(() => new Date('2026-10-02T14:00:00'), []);
 
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [isClient, setIsClient] = useState(false);
