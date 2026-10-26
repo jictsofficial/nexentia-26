@@ -80,10 +80,8 @@ export default function CompetitionPageClient({ competition }: CompetitionPageCl
 
   const isMostPopularAward = competition.slug === 'most-popular';
   
-  // Since there is only 1 sub-competition for each (or 0 for most-popular)
   const subComp = competition.subCompetitions[0];
-  const subKey = subComp ? generateSubmissionKey(subComp.name) : '';
-  const currentSubmissionUrl = subComp ? submissionLinks[subKey] : undefined;
+  const currentSubmissionUrl = submissionLinks[competition.slug];
   
   const rulesToDisplay = isMostPopularAward 
     ? competitionRules?.rules.find(r => r.subCompetitionName === 'Most Popular School ICT Society')
@@ -122,16 +120,15 @@ export default function CompetitionPageClient({ competition }: CompetitionPageCl
 
           {/* Action Buttons */}
           <div className="comp-header flex flex-wrap justify-center gap-4 mb-20">
-             <a
-                href={registrationLinkForCategory}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all duration-300"
-                data-cursor-hover
+             {/* ලියාපදිංචි කිරීමේ බොත්තම අක්‍රිය කර ඇත */}
+             <button
+                className="px-6 py-3 bg-[#2a2a35] text-gray-500 font-bold rounded-lg cursor-not-allowed border border-gray-700"
+                disabled
               >
-                Register Now
-              </a>
+                Registration Closed
+              </button>
               
+              {/* Submission බොත්තම විවෘත කර ඇත */}
               {!isMostPopularAward && (
                 currentSubmissionUrl ? (
                   <a

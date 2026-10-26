@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import CustomCursor from "@/components/CustomCursor"; // 1. CustomCursor import කිරීම
 import SmoothScroll from "@/components/SmoothScroll"; // 2. SmoothScroll ද නැවත import කිරීම
+import AudioPlayer from "@/components/AudioPlayer";
 
 // Font variables සකස් කිරීම
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${inter.variable} ${orbitron.variable} font-sans bg-black`}>
+        <AudioPlayer />
         <CustomCursor /> {/* 3. Component එක මෙතනට එක් කිරීම */}
         <SmoothScroll /> {/* 4. SmoothScroll ද මෙතනට එක් කිරීම */}
         <Navbar />
