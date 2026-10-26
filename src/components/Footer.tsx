@@ -64,14 +64,14 @@ const Footer = () => {
                 <div className="footer-col flex flex-col items-center md:items-start gap-6">
                     <div className="flex items-center justify-center md:justify-start gap-4 flex-wrap">
                         <div className="relative h-8 w-28">
-                            <Image src="/nexentia-logo.png" alt="Nexentia Logo" fill style={{ objectFit: "contain" }} />
-                        </div>
+                            <Image src="/nexentia-logo.png" alt="Nexentia Logo" fill sizes="120px" style={{ objectFit: "contain" }} />
+                            </div>
                         <div className="relative h-12 w-12">
-                            <Image src="/sjclogo.png" alt="School Logo" fill style={{ objectFit: "contain" }} />
-                        </div>
+                            <Image src="/sjclogo.png" alt="School Logo" fill sizes="50px" style={{ objectFit: "contain" }} />
+                            </div>
                         <div className="relative h-12 w-14">
-                             <Image src="/jicts-logo.png" alt="JICTS Logo" fill style={{ objectFit: "contain" }} />
-                        </div>
+                             <Image src="/jicts-logo.png" alt="JICTS Logo" fill sizes="60px" style={{ objectFit: "contain" }} />
+                             </div>
                     </div>
                     <p className="text-sm">
                         Nexentia, the flagship ICT Day of St. Joseph&apos;s Girls&apos; School, is an inter-school event celebrating future tech and digital innovation.

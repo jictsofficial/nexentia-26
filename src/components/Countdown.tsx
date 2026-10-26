@@ -82,12 +82,13 @@ const Countdown = () => {
         {/* Logo Image - Replacing "OPERATION IN MOTION" with the logo */}
         <div className="anim-title">
           <Image
-            src="/OIMlogo.png"  // Add your custom logo image path
-            alt="Operation In Motion"
-            width={1000}  // Adjust the size as needed
-            height={100}
-            className="mx-auto"
-          />
+  src="/OIMlogo.png"
+  alt="Operation In Motion"
+  width={1000}
+  height={100}
+  className="mx-auto"
+  style={{ width: 'auto', height: 'auto' }} 
+/>
         </div>
 
         {/* Adjusted margins for subtitle */}
