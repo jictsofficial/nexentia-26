@@ -9,10 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 // දත්ත යාවත්කාලීන කිරීම: hasPhoneCall property එක එකතු කරන ලදී
 const contactDetails = [
-    { name: "JICT Sandini Himansa", role: "President", phone: "+94 70 250 2059", hasWhatsApp: true, hasPhoneCall: true },
-    { name: "JICTS Iyara Markus", role: "V. President", phone: "+94 78 151 5066", hasWhatsApp: true, hasPhoneCall: true }, 
-    { name: "JICTS Amisha Nethushi", role: "Secretary", phone: "+94 71 891 8128", hasWhatsApp: true, hasPhoneCall: true },
-    { name: "JICTS Methuki Senesha", role: "Treasurer", phone: "+94 77 967 3604", hasWhatsApp: true, hasPhoneCall: true },
+    { name: "Sandini Himansa", role: "President", phone: "+94 70 250 2059", hasWhatsApp: true, hasPhoneCall: true },
+    { name: "Iyara Markus", role: "V. President", phone: "+94 78 151 5066", hasWhatsApp: true, hasPhoneCall: true }, 
+    { name: "Amisha Nethushi", role: "Secretary", phone: "+94 71 891 8128", hasWhatsApp: true, hasPhoneCall: true },
+    { name: "Methuki Senesha", role: "Treasurer", phone: "+94 77 967 3604", hasWhatsApp: true, hasPhoneCall: true },
 ];
 
 // SVG Icon Components
